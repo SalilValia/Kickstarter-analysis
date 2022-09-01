@@ -1,24 +1,25 @@
 # Kickstarter-analysis
 Performing Analysis on Kickstarter data to uncover trends
 ## Overview of Project
-This analysis was to help our client Louise compare how other campaigners did through out the years from 2009-2017. Then compare it with her campaigner and their funding goals.
+This analysis was to help our client Louise compare how other campaigners did through out the years from 2009-2017. Then compare it with her campaigner and their funding goals. the overview of this project was to help me get a better understanding on how to find and breakdown date using excel's features such as pivot tables, filters, line charts, and its functions. 
 ### Purpose
 The purpose of this analysis was to see how other campaigners did throughout the year and see how many met their fundraising goals, how many of their goals was successful, how many of the goals was failed, and how many of their goals was canceled on their Launch dates. 
 ## Analysis and Challenges
-
+I went through the Kickerstarter workbook and looked at the data. Learning through the modules I was able to understand and create filters to break down each data into group to understand it better. By filtering them into groups it was much easier to understand which campaigners were successful,failed, and canceled. Some filter that was helpful was filtering it campaigners by country, parent category and subcategories.
+Freezing panels helped me out a lot when I was scrolling through the rows to get data from subcategories and the goal amount. Formating the Goals section was fun to reverse engineer them to the correct amount from the scientific notation that was presented in the workbook.Using the Conditional formating tool was really helpful to color/indicate which campaigners were successful,failed,and canceled. Some challenges I had to deal with was making sure I was using the functions correctly and making sure my data for the pivot tables and charts were aligned properly. One of the challenges I still need more repition on was how to compute. Using the Iferrors function to calculate the Average donation column in the Kickstarter took longer than I expected. Im still not sure if I fully understand that function. All in all, the modules really helped me a ton to understand this data set more. 
 ### Analysis of Outcomes Based on Launch Date
-
+In the Outcomes based on Lauch Date sheet, we created a pivot table. We put the Outcomes category in the columns and values section. Filters we put parent category/subcategory and the years so we can analyze how each category did on their campaigner. By adding the years in the filters, we were able to break the data down monthy. By going through the table I noticed that the successful months were May and June for the Theater category. One thing I thought was interesting that the in the months of May June, the Film and video category had less successful months. Far less than Theater. It was helpful to be able to change the categories and see the visual change on the line cart. that way we can compare which category did better than Louise's campagner. 
 ### Analysis of Outcomes Based on Goals
-
+Now from this analysis, I noticed not a single campaigner was canceled. The most amount of projects reached the goal range of $1000-$4999. it had a total of 534 project in that range with 73 percent of the projects ended up being successful. The second most project amounts reached a goal of $1000 or less than that. With a total of 186 projects reaching that goal, about 76 percent of them bacame successful. There was also a 16 projects that reached the goal of $50000 and more! What I found shocking was that only 13 percent of that 16 ended being successful.  
 ### Challenges and Difficulties Encountered
-
+The biggest difficulty I had was in the Analysis of Outcomes based on goals section. I had my countifs function setup incorrectly and my line chart was matching or alining to the chart that it was supposed to look like. Initially I had Countifs(Kickstarter!G:G,"GB, Kickstarter!R:R,"plays",Kickstarter, IF:F,"successful", Kickstarter!D:D,"<=1000") I noticed that I didn't need to put the column G in the bracket. I initally thought were we just looking in Great Britain, But my line chart was alinging. So I decided to remove the (Kickstarter!G:G, "GB") from the formula and that ended up correctling my line chart. Second part I had trouble with was the if than statements to makes sure i debugged the error of 0/0. I will still need some repitition to understand that better. It took some time typing out the formula and making sure I typed it correctly. I still will need some more practice with the Countifs function.  
 ## Results
-
+I think it would be beneficial for Louise to have a goal range between $1000-10,000 will give her play the most successful outcome. The data also shows that the best month to start/launch a prject would be May. if Louise wants the most successful outcome. 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
-
+From the data in the Outcomes based on Launch Date, For the theater category, They had the most successful outcome in the month of May at 111. After May the next few months it steadily decreased in successful campaigners. Another part I thought was interesting was that there was no cancelations between the months of September to November. I wonder if the weather played a factor in that. I also think the 24 live outcomes between the months of Janurary and March was odd. Why wasn't there any beyond the month of March. 
 - What can you conclude about the Outcomes based on Goals?
-
+I noticed the successful and failed ratio was consistent from the goal range. The line chart showed a perfect balance and spots where the percentages flipped. It shows that projects are more successful when the had a goal range from less than $1000 to $15,000. Any projects that had goals from 40,000 and above seemed to be outliers in my opinion. It ended up being true with 14 projects being failed from having a goal of 50,000 and more. 
 - What are some limitations of this dataset?
-
+Some limitations I would see were the goal amount set. For the 'Outcomes based on Goals' section, Having the range from 0-$50,000 was a good range to understand and read the data. If we had increased the goal range to maybe 100,000 or more, it may have skewed the data and change the avearage percentage.
 - What are some other possible tables and/or graphs that we could create?
-
+Some graphs I think we could have incorporated were stacked Column graph in the Outcomes based on Launch Date section. It would give us a breakdown of each categories and how many outcomes they have and show the level of successful, failed, and canceled projects in each column. Scatter plot graph I think, would work well with Outcomes based on goals section. the scattered points would have shwon a consistent trend between the goal ranges. 
